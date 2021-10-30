@@ -1,0 +1,586 @@
+            /* Start my framework */
+            
+            * {
+                margin: 0;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            header {
+                background-image: url(../img/slide-1.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                min-height: 100vh;
+                position: relative;
+                z-index: 0;
+            }
+            
+            .overlay {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: rgba(49, 55, 61, .8);
+                z-index: -1;
+                top: 0;
+                left: 0;
+            }
+            
+            header .top-bar {
+                text-align: center;
+                color: #fff;
+                padding: 20px 0;
+            }
+            
+            header .logo {
+                font-size: 24px;
+            }
+            
+            .orange-txt {
+                color: #f7600e;
+            }
+            
+            header nav i {
+                margin-left: 10px;
+            }
+            
+            header .welcome-msg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            
+            header .welcome-msg h1 {
+                font-size: 62px;
+                color: #fff;
+            }
+            
+            header .welcome-msg p {
+                color: #ddd;
+                margin: 30px 0;
+            }
+            
+            header .welcome-msg button {
+                background: none;
+                padding: 8px;
+                width: 180px;
+                border-radius: 8px;
+                margin: 0 10px;
+                border: 1px solid #ddd;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+            
+            header .welcome-msg button:hover {
+                cursor: pointer;
+                background: #f7600e;
+                border-color: #f7600e;
+            }
+            
+            .service {
+                padding: 70px 0;
+            }
+            
+            .service .box {
+                text-align: center;
+            }
+            
+            .service .box * {
+                margin: 10px 0;
+            }
+            
+            .service .box svg {
+                height: 90px;
+                width: 90px;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+                line-height: 130px;
+                font-size: 18px;
+                color: #f7600e;
+            }
+            
+            .service .box svg:hover {
+                background: #f7600e;
+                color: #fff;
+                border-color: #f7600e;
+                cursor: pointer;
+            }
+            
+            .subscrib {
+                background-image: url('../img/news-later-img.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height: 40vh;
+                position: relative;
+                z-index: 0;
+            }
+            
+            .subscrib .button-box {
+                padding-top: 100px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .subscrib input {
+                background: #fff;
+                padding: 10px 120px;
+                color: #000;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            
+            .subscrib .sub {
+                padding-left: 100px;
+            }
+            
+            .subscrib button {
+                background: none;
+                padding: 10px 10px;
+                width: 150px;
+                border-radius: 8px;
+                margin: 0 10px;
+                border: 1px solid #ddd;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 14px;
+                -webkit-margin: border radius 8px;
+                -moz-margin: border radius 8px;
+                -ms-margin: border radius 8px;
+                -o-margin: border radius 8px;
+            }
+            
+            .subscrib button:hover {
+                background: #f7600e;
+                color: #fff;
+                cursor: pointer;
+            }
+            
+            .team {
+                padding-top: 50px;
+            }
+            
+            .team h1,
+            p {
+                text-align: center;
+            }
+            
+            .team h1 {
+                font-size: 42px;
+                color: #292929;
+                margin-bottom: 5px;
+            }
+            
+            .team p {
+                font-size: 15px;
+                color: #636363;
+                margin-bottom: 30px;
+            }
+            
+            .team .row .img-box img {
+                padding-right: 10px;
+                margin-bottom: 20px;
+                max-width: 350px;
+                height: auto;
+                border-radius: 10%;
+                -webkit-border-radius: 10%;
+                -moz-border-radius: 10%;
+                -ms-border-radius: 10%;
+                -o-border-radius: 10%;
+            }
+            
+            .staff {
+                background-image: url('../img/testimonial-bg.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height: 60vh;
+                position: relative;
+                z-index: 0;
+                margin: 30px 0;
+            }
+            
+            .members {
+                padding-top: 20px;
+            }
+            
+            .members h1,
+            p {
+                text-align: center;
+            }
+            
+            .members h1 {
+                font-size: 42px;
+                color: #292929;
+                margin-bottom: 5px;
+            }
+            
+            .members p {
+                font-size: 15px;
+                color: #636363;
+                margin-bottom: 30px;
+            }
+            
+            .members h3 {
+                color: #636363;
+                font-family: none;
+            }
+            
+            .members h3 {
+                color: #636363;
+                font-family: none;
+                text-align: center;
+            }
+            
+            .members h3:hover {
+                cursor: pointer;
+                color: #292929;
+            }
+            
+            .members .row .member-box img {
+                padding-right: 10px;
+                margin-bottom: 10px;
+                max-width: 350px;
+                height: auto;
+                border-radius: 10%;
+                -webkit-border-radius: 10%;
+                -moz-border-radius: 10%;
+                -ms-border-radius: 10%;
+                -o-border-radius: 10%;
+            }
+            
+            .members .member-box p {
+                font-size: 12px;
+            }
+            
+            .members .member-box .icons {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .members .container .member-box svg {
+                margin: 21px 3px;
+                font-size: 26px;
+                color: #636363;
+                padding-right: 5px;
+            }
+            
+            .members .container .member-box svg:hover {
+                cursor: pointer;
+                color: #f7600e;
+            }
+            
+            .contact {
+                background-image: url('../img/contact-bg.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height: 100vh;
+                position: relative;
+                z-index: 0;
+                margin: 30px 0;
+            }
+            
+            .contact {
+                padding-top: 20px;
+            }
+            
+            .contact h1,
+            p {
+                text-align: center;
+            }
+            
+            .contact h1 {
+                padding-top: 30px;
+                font-size: 36px;
+                color: #fff;
+                margin-bottom: 5px;
+            }
+            
+            .contact p {
+                font-size: 15px;
+                color: #ccc;
+                margin-bottom: 15px;
+            }
+            
+            .contact .contact-box {
+                padding-top: 100px;
+                width: 800px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .contact input {
+                background: #fff;
+                padding: 10px 80px;
+                color: #000;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+            
+            .contact .last-input input {
+                padding-bottom: 200px;
+                width: 800px;
+                margin-bottom: 5px;
+            }
+            
+            .contact .hire {
+                margin-right: 55px;
+            }
+            
+            .contact button {
+                background: none;
+                padding: 10px 10px;
+                width: 150px;
+                border-radius: 8px;
+                margin: 0 1px;
+                border: 1px solid #ddd;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 14px;
+                -webkit-margin: border radius 8px;
+                -moz-margin: border radius 8px;
+                -ms-margin: border radius 8px;
+                -o-margin: border radius 8px;
+            }
+            
+            .contact button:hover {
+                background: #f7600e;
+                color: #fff;
+                cursor: pointer;
+            }
+            
+            .contact .container .row .icons {
+                display: flex;
+            }
+            
+            .contact .container .row svg {
+                margin: 8px 5px;
+                font-size: 31px;
+                color: #636363;
+                padding-right: 5px;
+            }
+            
+            .contact .container .row svg:hover {
+                cursor: pointer;
+                color: #f7600e;
+            }
+            
+            @media (max-width:992px) {
+                header .logo {
+                    margin-bottom: 10px;
+                }
+                header .welcome-msg button {
+                    margin: 10px;
+                }
+                .subscrib .button-box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .members .row .member-box img {
+                    padding-right: 10px;
+                    margin-left: 40px;
+                }
+                .contact .contact-box {
+                    width: 600px;
+                }
+                .contact input {
+                    padding: 10px 20px;
+                }
+                .contact .last-input input {
+                    padding-bottom: 180px;
+                    width: 600px;
+                }
+            }
+            
+            @media (max-width:768px) {
+                header .logo {
+                    margin-bottom: 10px;
+                }
+                header .welcome-msg button {
+                    margin: 10px;
+                }
+                header .welcome-msg h1 {
+                    font-size: 42px;
+                }
+                header .welcome-msg p {
+                    font-size: 15px;
+                }
+                .subscrib input {
+                    margin-bottom: 10px;
+                    margin-left: 50px;
+                }
+                .subscrib .sub {
+                    margin-left: 170px;
+                }
+                .team .row .img-box img {
+                    margin-left: 90px;
+                }
+                .team h1 {
+                    font-size: 36px;
+                }
+                .team p {
+                    font-size: 12px;
+                }
+                .members .row .member-box img {
+                    margin-left: 4px;
+                }
+                .members h1 {
+                    font-size: 36px;
+                }
+                .members p {
+                    font-size: 12px;
+                }
+                .contact h1 {
+                    font-size: 36px;
+                }
+                .contact p {
+                    font-size: 12px;
+                }
+                .contact input {
+                    padding: 10px 40px;
+                }
+                .contact .last-input input {
+                    padding-bottom: 100px;
+                    width: 570px;
+                }
+            }
+            
+            @media (max-width:576px) {
+                header .logo {
+                    margin-bottom: 10px;
+                }
+                header .welcome-msg button {
+                    margin: 10px;
+                }
+                header .welcome-msg h1 {
+                    font-size: 42px;
+                }
+                header .welcome-msg p {
+                    font-size: 14px;
+                }
+                .subscrib .button-box {
+                    width: 300px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-left: 0;
+                }
+                .subscrib input {
+                    margin-left: 35px;
+                }
+                .subscrib .sub {
+                    margin-left: 100px;
+                }
+                .team .row .img-box img {
+                    margin-left: 60px;
+                }
+                .members .row .member-box img {
+                    margin-left: 150px;
+                }
+                .team h1 {
+                    font-size: 36px;
+                }
+                .team p {
+                    font-size: 12px;
+                }
+                .members h1 {
+                    font-size: 36px;
+                }
+                .members p {
+                    font-size: 12px;
+                }
+                .contact h1 {
+                    font-size: 36px;
+                }
+                .contact p {
+                    font-size: 12px;
+                }
+                .contact .contact-box {
+                    width: 480px;
+                }
+                .contact input {
+                    padding: 10px 15px;
+                }
+                .contact .last-input input {
+                    padding-bottom: 180px;
+                    width: 485px;
+                }
+                .contact .hire {
+                    width: 43%;
+                    padding-left: 0;
+                }
+            }
+            
+            @media (max-width:450px) {
+                header .welcome-msg h1 {
+                    font-size: 36px;
+                }
+                .team p {
+                    font-size: 12px;
+                }
+                .subscrib input {
+                    padding: 10px 70px;
+                    margin-left: 20px;
+                }
+                .subscrib .sub {
+                    margin-left: 8px;
+                }
+                .members p {
+                    font-size: 12px;
+                }
+                .team .row .img-box img {
+                    margin-left: 20px;
+                }
+                .members .row .member-box img {
+                    margin-left: 65px;
+                }
+                .team h1 {
+                    font-size: 36px;
+                }
+                .team p {
+                    font-size: 12px;
+                }
+                .members h1 {
+                    font-size: 36px;
+                }
+                .members p {
+                    font-size: 12px;
+                }
+                .contact h1 {
+                    font-size: 36px;
+                }
+                .contact p {
+                    font-size: 12px;
+                }
+                .contact .contact-box {
+                    width: 210px;
+                }
+                .contact .contact-box .second-input {
+                    width: 10px;
+                }
+                .contact input {
+                    padding: 10px 5px;
+                }
+                .contact .last-input input {
+                    padding-bottom: 180px;
+                    width: 390px;
+                }
+                .contact .hire {
+                    width: 45%;
+                    padding-left: 0;
+                    margin-right: 0;
+                }
+            }
